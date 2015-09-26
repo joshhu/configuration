@@ -21,6 +21,15 @@ fi
 ##
 sudo apt-get update -y
 sudo apt-get upgrade -y
+sudo apt-get htop -y
+export LC_ALL=C
+
+
+##
+## Install mysql5.5
+export DEBIAN_FRONTEND="noninteractive"
+sudo rm /var/lib/mysql -rf
+sudo apt-get install mysql-client-5.5 mysql-server-5.5 -y
 
 ##
 ## Install system pre-requisites
